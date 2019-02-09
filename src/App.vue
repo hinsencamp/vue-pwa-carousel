@@ -9,6 +9,12 @@
     </header>
     <main>
       <h1>{{ headline }}</h1>
+      <Card
+        class="current-element"
+        :headline="cards[0].headline"
+        :text="cards[0].text"
+        :imgName="cards[0].imgName"
+      />
       <div class="section">
         <h2>{{this.sections[0].headline}}</h2>
         <Carousel :cards="cards" />
