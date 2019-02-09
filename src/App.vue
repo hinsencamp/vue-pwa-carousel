@@ -9,6 +9,13 @@
     </header>
     <main>
       <h1 v-html="headline" />
+
+      <Card
+        class="current-element"
+        :headline="cards[0].headline"
+        :text="cards[0].text"
+        :imgName="cards[0].imgName"
+      />
       <div class="section">
         <h2>{{this.sections[1].headline}}</h2>
         <p>{{this.sections[1].text}}</p>
@@ -19,10 +26,11 @@
 </template>
 
 <script>
-import Imprint from "./Components/Imprint";
+import Imprint from "./components/Imprint";
+import Card from "./components/Card";
 export default {
   name: "app",
-  components: { Imprint },
+  components: { Imprint, Card },
 
   data() {
     return {
