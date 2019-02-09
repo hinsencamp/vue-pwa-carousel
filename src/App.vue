@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       headline:
-        "Here Tou Learn Everything about building Progressive Vue Apps!",
+        "Here You Learn Everything about building Progressive Vue Apps!",
       sections: [
         { headline: "What does a Service Worker do?" },
         {
@@ -40,22 +40,22 @@ export default {
         }
       ],
 
-      cardContent: [
+      cards: [
         {
-          headline: "Make App available Offline",
-          infoText:
+          headline: "Makes App available Offline",
+          text:
             "By using the CachingAPI all static elements on an app can be pre-cached",
           imgName: "setting.svg"
         },
         {
           headline: "Use background sync to defer actions",
-          infoText:
+          text:
             "User inputs entered when offline are sent in the background once they get connectivity.",
           imgName: "cloud.svg"
         },
         {
           headline: "Send Push Notifications",
-          infoText:
+          text:
             "The Notifications API lets us send push notifications to re-engage users.",
           imgName: "antenna.svg"
         }
