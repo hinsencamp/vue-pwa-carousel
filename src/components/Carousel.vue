@@ -8,6 +8,7 @@
       />
       <Card
         class="current-element"
+        v-touch:swipe="this.swipeHandler"
         :headline="currentElement.headline"
         :text="currentElement.text"
         :imgName="currentElement.imgName"
@@ -52,6 +53,14 @@ export default {
     }
   },
   methods: {
+    swipeHandler(direction) {
+      if (direction === "right" && !this.reachedMaxLeft) {
+        this.prevElement();
+      }
+      if (direction === "left" && !this.reachedMaxRight) {
+        this.nextElement();
+      }
+    },
     showNextElement() {
       this.currentElementIndex++;
     },
