@@ -43,7 +43,7 @@ export default {
       sections: [
         { headline: "What does a Service Worker do?" },
         {
-          headline: "How is a Service Worker exactly?"
+          headline: "How does a Service Worker exactly work?"
         }
       ],
 
