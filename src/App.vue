@@ -9,12 +9,10 @@
     </header>
     <main>
       <h1>{{ headline }}</h1>
-      <Card
-        class="current-element"
-        :headline="cards[0].headline"
-        :text="cards[0].text"
-        :imgName="cards[0].imgName"
-      />
+      <div class="section">
+        <h2>{{this.sections[0].headline}}</h2>
+        <Carousel :cards="cards" />
+      </div>
       <div class="section">
         <h2>{{this.sections[1].headline}}</h2>
         <span>
@@ -31,10 +29,10 @@
 
 <script>
 import Imprint from "./components/Imprint";
-import Card from "./components/Card";
+import Carousel from "./components/Carousel";
 export default {
   name: "app",
-  components: { Imprint, Card },
+  components: { Imprint, Carousel },
 
   data() {
     return {
