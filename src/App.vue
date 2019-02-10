@@ -14,6 +14,14 @@
         <Carousel :cards="cards" />
       </div>
       <div class="section">
+        <h2>{{this.sections[0].headline}}</h2>
+        <Carousel :cards="cards" />
+      </div>
+      <div class="section">
+        <h2>{{this.sections[0].headline}}</h2>
+        <Carousel :cards="cards" />
+      </div>
+      <div class="section">
         <h2>{{this.sections[1].headline}}</h2>
         <p>{{this.sections[1].text}}</p>
       </div>
