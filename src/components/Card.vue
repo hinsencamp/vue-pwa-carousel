@@ -23,4 +23,4 @@ export default {
 };
 </script>
 
-<style  src="../assets/styles/Card.css"  scoped>
+<style src="../assets/styles/Card.css" scoped>
