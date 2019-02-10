@@ -10,6 +10,14 @@
     <main>
       <h1>{{ headline }}</h1>
       <div class="section">
+        <h2>{{this.sections[0].headline}}</h2>
+        <Carousel :cards="cards" />
+      </div>
+      <div class="section">
+        <h2>{{this.sections[0].headline}}</h2>
+        <Carousel :cards="cards" />
+      </div>
+      <div class="section">
         <h2>{{this.sections[1].headline}}</h2>
         <span>
           Read this <a
@@ -24,10 +32,11 @@
 </template>
 
 <script>
-import Imprint from "./Components/Imprint";
+import Imprint from "./components/Imprint";
+import Carousel from "./components/Carousel";
 export default {
   name: "app",
-  components: { Imprint },
+  components: { Imprint, Carousel },
 
   data() {
     return {
