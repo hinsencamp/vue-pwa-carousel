@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-![alt text](https://ibb.co/sQ5Js8p)
+
 
 
 ## Build Setup
