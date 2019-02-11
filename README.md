@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-![alt text](raw.githubusercontent.com/vue-pwa-carousel/master/screenshot_vue-pwa-carousel.png)
+![alt text](https://ibb.co/sQ5Js8p)
 
 
 ## Build Setup
