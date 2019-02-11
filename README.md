@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](raw.githubusercontent.com/vue-pwa-carousel/master/screenshot_vue-pwa-carousel.png)
 
 
 ## Build Setup
