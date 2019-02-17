@@ -14,14 +14,6 @@
         <Carousel :cards="cards" />
       </div>
       <div class="section">
-        <h2>{{this.sections[0].headline}}</h2>
-        <Carousel :cards="cards" />
-      </div>
-      <div class="section">
-        <h2>{{this.sections[0].headline}}</h2>
-        <Carousel :cards="cards" />
-      </div>
-      <div class="section">
         <h2>{{this.sections[1].headline}}</h2>
         <p>{{this.sections[1].text}}</p>
       </div>
@@ -65,7 +57,7 @@ export default {
         {
           headline: "Send Push Notifications",
           text:
-            "The Notifications API lets us send push notifications to re-engage users.",
+            "The <a href='https://developer.mozilla.org/en-US/docs/Web/API/notification'>Notifications API</a> lets us send push notifications to re-engage users.",
           imgName: "antenna.svg"
         }
       ]
