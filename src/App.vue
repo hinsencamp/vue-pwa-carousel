@@ -8,21 +8,10 @@
       <span>Progressive Vue App</span>
     </header>
     <main>
-      <h1>{{ headline }}</h1>
-      <Card
-        class="current-element"
-        :headline="cards[0].headline"
-        :text="cards[0].text"
-        :imgName="cards[0].imgName"
-      />
+      <h1 v-html="headline" />
       <div class="section">
         <h2>{{this.sections[1].headline}}</h2>
-        <span>
-          Read this <a
-            href='http://creativecommons.org/licenses/by/3.0/'
-            title='Learn about Service Workers'
-          >other</a> article of mine!
-        </span>
+        <p>{{this.sections[1].text}}</p>
       </div>
       <Imprint />
     </main>
@@ -39,19 +28,21 @@ export default {
   data() {
     return {
       headline:
-        "Here You Learn Everything about building Progressive Vue Apps!",
+        'Learn Everything about building Progressive Vue Apps with <a href="https://medium.com/@Fa_Hinse">@Fa_Hinse</a> on Medium!',
       sections: [
-        { headline: "What does a Service Worker do?" },
+        { headline: "What can Service Workers do?" },
         {
-          headline: "How does a Service Worker exactly work?"
+          headline: "How do Service Workers exactly work?",
+          text:
+            "Read more about Service Workers it in my other tutorials. There we implement and discuss the astonishing offline-first experience that Service Workers provide."
         }
       ],
 
       cards: [
         {
-          headline: "Makes App available Offline",
+          headline: "Make App available Offline",
           text:
-            "By using the CachingAPI all static elements on an app can be pre-cached",
+            "All static files get pre-cached by using the <a href='https://developer.mozilla.org/en-US/docs/Web/API/Cache'>Caching API.</a>",
           imgName: "setting.svg"
         },
         {
@@ -63,7 +54,7 @@ export default {
         {
           headline: "Send Push Notifications",
           text:
-            "The Notifications API lets us send push notifications to re-engage users.",
+            "The <a href='https://developer.mozilla.org/en-US/docs/Web/API/notification'>Notifications API</a> lets us send push notifications to re-engage users.",
           imgName: "antenna.svg"
         }
       ]
