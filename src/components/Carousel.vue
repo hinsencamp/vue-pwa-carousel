@@ -17,17 +17,24 @@
         :onClick="showNextElement"
         :disabled="this.reachedMaxRight"
       />
+
     </div>
+    <Indicators
+      :elements="this.cards"
+      :currentElementIndex="this.currentElementIndex"
+      :showElement="this.showElement"
+    />
   </div>
 </template>
 <script>
 import Card from "./Card.vue";
-import ArrowButton from "./ArrowButton";
+import ArrowButton from "./ArrowButton.vue";
+import Indicators from "./Indicators.vue";
 
 export default {
   name: "Carousel",
   props: { cards: Array },
-  components: { Card, ArrowButton },
+  components: { Card, ArrowButton, Indicators },
 
   data() {
     return {
@@ -51,6 +58,9 @@ export default {
     },
     showPrevElement() {
       this.currentElementIndex--;
+    },
+    showElement(elementIndex) {
+      this.currentElementIndex = elementIndex;
     }
   }
 };
