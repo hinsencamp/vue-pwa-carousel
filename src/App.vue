@@ -51,7 +51,7 @@ export default {
         {
           headline: "Use background sync to defer actions",
           text:
-            "Users can entered data when offline. It is sent, once their connectivity comes back. The Background Sync API makes it possible.",
+            "Data can be entered offline, it's sent when online again thanks to the Background Sync API.",
           imgName: "cloud.svg"
         },
         {
