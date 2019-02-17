@@ -3,7 +3,7 @@
     <div class="card-carousel">
       <ArrowButton
         arrowType="left"
-        @click.native="showPrevElement"
+        :onClick="showPrevElement"
         :disabled="this.reachedMaxLeft"
       />
       <Card
@@ -15,9 +15,10 @@
       />
       <ArrowButton
         arrowType="right"
-        @click.native="showNextElement"
+        :onClick="showNextElement"
         :disabled="this.reachedMaxRight"
       />
+
     </div>
     <Indicators
       :elements="this.cards"

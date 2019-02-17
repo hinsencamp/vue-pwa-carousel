@@ -1,5 +1,8 @@
 <template>
-  <button class="btn">
+  <button
+    class="btn"
+    @click="onClick"
+  >
     <img
       class="icon"
       :src="require(`@/assets/svg/${arrowType}.svg`)"
@@ -10,7 +13,7 @@
 <script>
 export default {
   name: "ArrowButton",
-  props: { arrowType: String }
+  props: { arrowType: String, onClick: Function }
 };
 </script>
 

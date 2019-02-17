@@ -54,7 +54,12 @@ main {
 }
 
 a {
+  text-decoration: none;
   color: #c5494b;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 a:visited {
