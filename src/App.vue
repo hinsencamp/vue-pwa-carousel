@@ -48,8 +48,7 @@ export default {
       cards: [
         {
           headline: "Make App available Offline",
-          text:
-            "All static files get pre-cached by using the <a href='https://developer.mozilla.org/en-US/docs/Web/API/Cache'>Caching API.</a>",
+          text: "All static files get pre-cached by using the Caching API.",
           imgName: "setting.svg"
         },
         {
@@ -61,7 +60,7 @@ export default {
         {
           headline: "Send Push Notifications",
           text:
-            "The <a href='https://developer.mozilla.org/en-US/docs/Web/API/notification'>Notifications API</a> lets us send push notifications to re-engage users.",
+            "The Notifications API lets us send push notifications to re-engage users.",
           imgName: "antenna.svg"
         }
       ]
