@@ -48,20 +48,19 @@ export default {
       cards: [
         {
           headline: "Make App available Offline",
-          text:
-            "All static files get pre-cached by using the <a href='https://developer.mozilla.org/en-US/docs/Web/API/Cache'>Caching API.</a>",
+          text: "All static files get pre-cached by using the Caching API.",
           imgName: "setting.svg"
         },
         {
           headline: "Use background sync to defer actions",
           text:
-            "Users can entered data when offline. It is sent, once their connectivity comes back. The <a href={https://developer.mozilla.org/en-US/docs/Web/API/SyncManager}>Background Sync API</a> makes it possible.",
+            "Users can entered data when offline. It is sent, once their connectivity comes back. The Background Sync API makes it possible.",
           imgName: "cloud.svg"
         },
         {
           headline: "Send Push Notifications",
           text:
-            "The <a href='https://developer.mozilla.org/en-US/docs/Web/API/notification'>Notifications API</a> lets us send push notifications to re-engage users.",
+            "The Notifications API lets us send push notifications to re-engage users.",
           imgName: "antenna.svg"
         }
       ]
