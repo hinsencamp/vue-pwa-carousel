@@ -64,7 +64,7 @@ export default {
         {
           headline: "Send Push Notifications",
           text:
-            "The <a href='https://developer.mozilla.org/en-US/docs/Web/API/notification'>Notifications API</a> lets us send push notifications to re-engage users.",
+            "The Notifications API lets us send push notifications to re-engage users.",
           imgName: "antenna.svg"
         }
       ]
